@@ -88,7 +88,9 @@ protected void processRequest(HttpServletRequest request,HttpServletResponse res
          for(char car='A' ;car<='Z';car++){
              
         if(aciertos.indexOf(car)==-1 && errados.indexOf(car)==-1)
-        out.println("<a href=Juego?letra="+car+">"+car+"</a>");
+        out.println("<a href='Juego?letra=" + car + "'>" + car + "</a>");
+   
+        //out.println("<a href=Juego?letra="+car+">"+car+"</a>");
     }
     }
     else{ 
